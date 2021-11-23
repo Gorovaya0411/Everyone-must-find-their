@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.ghosttime.emftm.ui.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.ghosttime.emftm.ui.menu.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_optionFragment"
+            app:destination="@id/optionFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_secondaryMenuFragment"
+            app:destination="@id/secondaryMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/optionFragment"
+        android:name="com.ghosttime.emftm.ui.option.OptionFragment"
+        android:label="OptionFragment"
+        tools:layout="@layout/fragment_option" />
+    <fragment
+        android:id="@+id/secondaryMenuFragment"
+        android:name="com.ghosttime.emftm.ui.secondary_menu.SecondaryMenuFragment"
+        android:label="SecondaryMenuFragment"
+        tools:layout="@layout/fragment_secondary_menu">
+        <action
+            android:id="@+id/action_secondaryMenuFragment_to_mainTwoEightCardsFragment"
+            app:destination="@id/mainTwoEightCardsFragment" />
+        <action
+            android:id="@+id/action_secondaryMenuFragment_to_mainTwoSixCardsFragment"
+            app:destination="@id/mainTwoSixCardsFragment" />
+        <action
+            android:id="@+id/action_secondaryMenuFragment_to_mainTwoTwelveCardsFragment"
+            app:destination="@id/mainTwoTwelveCardsFragment" />
+        <action
+            android:id="@+id/action_secondaryMenuFragment_to_mainTwoTenCardsFragment"
+            app:destination="@id/mainTwoTenCardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainTwoEightCardsFragment"
+        android:name="com.ghosttime.emftm.ui.main_two.MainTwoEightCardsFragment"
+        android:label="MainTwoEightCardsFragment"
+        tools:layout="@layout/fragment_main_two_eight_cards">
+        <action
+            android:id="@+id/action_mainTwoEightCardsFragment_to_pauseFragment"
+            app:destination="@id/pauseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainTwoSixCardsFragment"
+        android:name="com.ghosttime.emftm.ui.main_two.MainTwoSixCardsFragment"
+        android:label="MainTwoSixCardsFragment"
+        tools:layout="@layout/fragment_main_two_six_cards">
+        <action
+            android:id="@+id/action_mainTwoSixCardsFragment_to_pauseFragment"
+            app:destination="@id/pauseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainTwoTwelveCardsFragment"
+        android:name="com.ghosttime.emftm.ui.main_two.MainTwoTwelveCardsFragment"
+        android:label="MainTwoTwelveCardsFragment"
+        tools:layout="@layout/fragment_main_two_twelve_cards">
+        <action
+            android:id="@+id/action_mainTwoTwelveCardsFragment_to_pauseFragment"
+            app:destination="@id/pauseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainTwoTenCardsFragment"
+        android:name="com.ghosttime.emftm.ui.main_two.MainTwoTenCardsFragment"
+        android:label="MainTwoTenCardsFragment"
+        tools:layout="@layout/fragment_main_two_ten_cards">
+        <action
+            android:id="@+id/action_mainTwoTenCardsFragment_to_pauseFragment"
+            app:destination="@id/pauseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pauseFragment"
+        android:name="com.ghosttime.emftm.ui.pause.PauseFragment"
+        android:label="PauseFragment"
+        tools:layout="@layout/fragment_pause">
+        <action
+            android:id="@+id/action_pauseFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_pauseFragment_to_mainTwoTenCardsFragment"
+            app:destination="@id/mainTwoTenCardsFragment" />
+        <action
+            android:id="@+id/action_pauseFragment_to_mainTwoTwelveCardsFragment"
+            app:destination="@id/mainTwoTwelveCardsFragment" />
+        <action
+            android:id="@+id/action_pauseFragment_to_mainTwoSixCardsFragment"
+            app:destination="@id/mainTwoSixCardsFragment" />
+        <action
+            android:id="@+id/action_pauseFragment_to_mainTwoEightCardsFragment"
+            app:destination="@id/mainTwoEightCardsFragment" />
+    </fragment>
+</navigation>
